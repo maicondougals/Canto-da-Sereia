@@ -24,6 +24,27 @@ header img {
   height: 200px;
 }
 
+.logo {
+  animation: mover 4s infinite ease-in;
+}
+
+@keyframes mover {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, 10deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, -10deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
 @keyframes aparecer {
   from {
     opacity: 0;
@@ -40,25 +61,29 @@ article {
   align-items: center;
 }
 article a:hover {
-  background-color: rgba(245, 245, 245, 0.68);
   width: 75vw;
   height: 80px;
   transition: 0.2s;
 }
 article #whatsapp {
-  animation: aparecer 2s ease;
+  animation: aparecer 1s ease;
+  background: linear-gradient(90deg, white, rgb(210, 209, 209));
+  box-shadow: 20px 10px 20px 7px rgba(245, 245, 245, 0.127);
 }
 article #anotaai {
-  animation: aparecer 2s ease;
-  animation-delay: 0.1s;
+  animation: aparecer 1.5s ease;
+  background: linear-gradient(90deg, white, rgb(210, 209, 209));
+  box-shadow: 20px 10px 20px 7px rgba(245, 245, 245, 0.127);
 }
 article #ifood {
   animation: aparecer 2s ease;
-  animation-delay: 0.2s;
+  background: linear-gradient(90deg, white, rgb(210, 209, 209));
+  box-shadow: 20px 10px 20px 7px rgba(245, 245, 245, 0.127);
 }
 article #ze {
-  animation: aparecer 2s ease;
-  animation-delay: 0.3s;
+  animation: aparecer 2.5s ease;
+  background: linear-gradient(90deg, white, rgb(210, 209, 209));
+  box-shadow: 20px 10px 20px 7px rgba(245, 245, 245, 0.127);
 }
 article a {
   display: flex;
@@ -68,9 +93,9 @@ article a {
   margin: 10px;
   width: 70vw;
   height: 80px;
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 footer {
