@@ -15,6 +15,7 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    perspective: 500px;
     img{
         border-radius: 100px;
         width: 200px;
@@ -22,28 +23,28 @@ header{
     }
 }
 .logo{
-    animation: mover 4s infinite ease-in;
+    animation: mover 10s infinite ease-in;
     
 }
 @keyframes mover {
     0%{
-        transform:rotate3d(0,1,0,0deg );
+        transform:rotateY(0deg);
         
     }
     25%{
-        transform:rotate3d(0,1,0,10deg );
+        transform:rotateY(30deg);
        
     }
     50%{
-        transform:rotate3d(0,1,0,0deg );
+        transform:rotateY(0deg);
        
     }
     75%{
-        transform:rotate3d(0,1,0,-10deg );
+        transform:rotateY(-30deg);
        
     }
     100%{
-        transform:rotate3d(0,1,0,0deg );
+        transform:rotateY(0deg);
        
     }
     
@@ -66,7 +67,7 @@ article{
         
         width: 75vw;
         height: 80px;
-        transition: .2s;
+        transition: .2s ease-in;
 
     }
     #whatsapp{
@@ -104,6 +105,7 @@ article{
         background-color: whitesmoke;
         color: black;
         border-radius: 35px;
+        transition:transform 2s ease ;
     }
 }
 footer{
